@@ -1,0 +1,298 @@
+:root{
+	--main_color_val:28, 51,89;
+	--sec_color_val:19,189,158;
+	--fallback_bg_val:252,254,254;
+
+	--main_color:rgb(var(--main_color_val));
+	--sec_color:rgb(var(--sec_color_val));
+	--fallback_bg:rgb(var(--fallback_bg_val));
+
+	--background_color:linear-gradient(to right, var(--fallback_bg), rgb(220,245,241));
+
+
+}
+
+/*Legger til Geomanist*/
+@font-face{ 
+	font-family: 'Geomanist Medium';
+	src: url('../fonts/geomanist-medium-webfont.eot');
+	src: url('../fonts/geomanist-medium-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/geomanist-medium-webfont.woff') format('woff'),
+	     url('../fonts/geomanist-medium-webfont.ttf') format('truetype'),
+	     url('../fonts/geomanist-medium-webfont.svg#webfont') format('svg');
+}
+@font-face{
+	font-family:'Geomanist Regular';
+	src: url('../fonts/geomanist-regular-webfont.eot');
+	src: url('../fonts/geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/geomanist-regular-webfont.woff') format('woff'),
+	     url('../fonts/geomanist-regular-webfont.ttf') format('truetype'),
+	     url('../fonts/geomanist-regular-webfont.svg#webfont') format('svg');
+
+}
+
+body{
+	width: 100%;
+	font-family: 'Geomanist Regular', Helvetica, sans-serif;
+	overflow-x: hidden;
+	padding-top: 80px;
+	background-color:var(--fallback_bg);
+	background: var(--background_color);
+	
+
+}
+
+.content_container{
+	float: left;
+	width: 100%;
+}
+
+header{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background:var(--background_color);
+	height: 80px;
+	float: left;
+	padding: 1em;
+	box-shadow: -1px 4px 20px rgba(var(--shadow-color),.10);
+	-webkit-transition: all .5s cubic-bezier(.56,.06,.15,.98);
+	transition: all .5s cubic-bezier(.56,.06,.15,.98);
+	overflow: hidden;
+	z-index: 999;
+}
+.open_menu{
+	height:100vh;
+	-webkit-transition: all .5s cubic-bezier(.56,.06,.15,.98);
+	transition: all .5s cubic-bezier(.56,.06,.15,.98);
+}
+
+.logo{
+	font-family: 'Geomanist Medium' , sans-serif;
+	font-size: 2.5em;
+	position: absolute;
+	left: -210px;
+	opacity: .4;
+	-webkit-transition: all .4s ;
+	transition: all .4s ;
+}
+
+.logo-visible{
+	left: 16px !important;
+	opacity: 1;
+	-webkit-transition: all .7s cubic-bezier(.25,.75,.41,1.09);
+	transition: all .7s cubic-bezier(.25,.75,.41,1.09);
+}
+
+
+.logo a,
+.logo a:visited{
+	text-decoration: none;
+	color:var(--main_color);
+
+}
+
+
+.menu_logo{	
+	font-family: 'Geomanist Medium', sans-serif;
+	font-size: 2.5em;
+	position: absolute;
+	opacity: 0;
+	top:-40px;
+	color:var(--main_color);
+	-webkit-transition: all .2s cubic-bezier(.15,.66,.38,.74);
+	transition: all .2s cubic-bezier(.15,.66,.38,.74);
+
+}
+.menu_logo-visible{
+	top: 16px !important;
+	opacity: 1;
+	-webkit-transition: all .4s ;
+	transition: all .4s ;
+}
+
+
+#menu_icon{
+	float: right;
+	width: 60px;
+	height: 50px;
+	padding:3px;
+	margin: 0px 20px;
+	position: relative;
+	cursor: pointer;
+	background: none;
+	border: none;
+
+
+}
+
+#menu_icon .line1,
+#menu_icon .line2,
+#menu_icon .line3{
+	background-color: var(--main_color);
+	height: 6px;
+	display: block;
+	width:85%;
+	margin:6px 7.5%;
+	transition: all .3s;
+	position: absolute;
+}
+
+.line1{
+	top: 0;
+}
+.line2{
+	bottom:16px;
+}
+
+.line3{
+	bottom:0;
+}
+
+.rotate1{
+	top:16px;
+	transition: all .3s;
+	-ms-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+.rotate2{
+	bottom: 16px;
+	transition: all .3s;
+	-ms-transform: rotate(135deg); 
+    -webkit-transform: rotate(135deg); 
+    transform: rotate(135deg);
+}
+.move_away{
+	margin-left: 100px !important;
+	opacity: .5;
+	-webkit-transition: all .6s ;
+	transition: all .6s ;
+}
+
+nav{	
+	height: auto;
+	width: 100%;
+	float: left; 
+	z-index:999;
+	overflow: hidden;
+	padding-bottom: 20px;
+	display: none;
+	opacity: 0;
+	transition:all .3s;
+	
+
+}
+.block_nav{
+	display: block;
+
+}
+.opacity{
+	opacity: 1;
+	-webkit-transition: all .6s ;
+	transition: all .6s ;
+}
+
+nav ul {
+	list-style-type: none;
+	margin-top :4em;
+	padding-left: 30px;
+}
+nav ul li{
+	margin: 1em 0;
+}
+
+nav ul li:after{
+	content:" ";
+	display: block;
+	height: 4px;
+	margin-top: -2px;
+	width:133px;
+	background-color: var(--main_color);
+}
+nav ul .active:after{
+	background-color: var(--sec_color);
+}
+
+nav ul li:nth-of-type(3):after{
+	width:121px;
+}
+
+
+nav ul li a{
+	font-size: 2em;
+	text-decoration: none;
+	color: var(--main_color);
+	font-family: 'Geomanist Medium', sans-serif;
+	-webkit-transition: all .2s cubic-bezier(.56,.06,.15,.98);
+	transition: all .2s cubic-bezier(.56,.06,.15,.98);
+
+}
+nav ul li a:hover,
+nav ul li a:active{
+	color: var(--sec_color) ;
+	-webkit-transition: all .2s cubic-bezier(.56,.06,.15,.98);
+	transition: all .2s cubic-bezier(.56,.06,.15,.98);
+}
+
+
+
+
+
+
+/*////////   Tablet-stående    /////////*/
+@media only screen and (min-width: 786px){
+
+}
+
+@media only screen and (min-width: 900px){
+
+}
+
+
+/*////////   Tablet-liggende/ Liten pc    /////////*/
+@media only screen and (min-width: 1024px){
+	header{
+		position: fixed;
+	}
+	.menu_logo,
+	#menu_icon{
+		display: none;
+	}
+	.logo{
+		left: 5% !important;
+		opacity: 1;
+	}
+
+	main{
+		width: 95%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+
+	}
+
+	nav{
+		width: auto;
+		display: block;
+		opacity: 1;
+		float: right;
+		margin-right: 5%;
+	}
+
+	nav ul{
+		padding: 0;
+		margin: 0;
+	}
+	nav ul li{
+		float: left;
+		margin: 9px 1em 0 1em;
+	}
+
+
+
+
+	/*////////   Desktop    /////////*/
+@media only screen and (min-width: 1254px){
+
+}
