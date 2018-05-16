@@ -12,6 +12,11 @@
 
 }
 
+*{
+	color:var(--main_color);
+	letter-spacing: .3px;
+}
+
 /*Legger til Geomanist*/
 @font-face{ 
 	font-family: 'Geomanist Medium';
@@ -79,7 +84,7 @@ header{
 }
 
 .logo-visible{
-	left: 16px !important;
+	left: 5% !important;
 	opacity: 1;
 	-webkit-transition: all .7s cubic-bezier(.25,.75,.41,1.09);
 	transition: all .7s cubic-bezier(.25,.75,.41,1.09);
@@ -235,6 +240,123 @@ nav ul li a:active{
 	-webkit-transition: all .2s cubic-bezier(.56,.06,.15,.98);
 	transition: all .2s cubic-bezier(.56,.06,.15,.98);
 }
+
+main{
+	width: 90%;
+	margin-left: 5%;
+	padding: 3em 0 0 0;
+	
+}
+
+h1{
+	width: 100%;
+	font-size: 2.2em;
+	color:var(--main_color);
+	font-family: 'Geomanist-Medium', sans-serif;
+	margin-bottom: 2em;
+}
+
+h1::before{
+	content:"–";
+	color: var(--sec_color);
+}
+
+article{
+	margin: 0 0 4em 0;
+}
+.half{
+	width: 100%;
+
+}
+.full{
+	width: 100%;
+}
+
+.section{
+	font-size: 1.1em;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	margin:1em 0;
+	line-height: 1.6em;
+
+
+}
+.full > .section{
+	margin: .5em 0 2.5em 0;
+}
+
+.title{
+	font-family: 'Geomanist-Medium', sans-serif;
+
+	/* 1px margin top to align title + content */
+	margin-top: 2px;
+}
+
+
+
+.half > .section .title{
+	width: 40%
+}
+
+.half > .section .content{
+	width: 60%;
+}
+
+
+.full > .section .title{
+	width: 100%;
+}
+.full > .section .content{
+	width: 100%;
+}
+
+.half > .section .content ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.half > .section .content ul li{
+	position: relative;
+}
+
+.half > .section .content ul li::before{
+	content:" ";
+	position: absolute;
+	background-color: var(--sec_color);
+	width: 8px;
+	height: 2px;
+	top:13px;
+	left:-11px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 630px){
+.half{
+	width: 60%;
+
+}
+	.half > .section .title{
+	width: calc((100% / 3)*1);
+}
+
+.half > .section .content{
+	width: calc((100% / 3)*2);;
+}
+.full > .section .title{
+	width: 20%;
+}
+.full > .section .content{
+	width: 80%;
+}
+}
+
 
 
 
