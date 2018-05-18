@@ -459,7 +459,7 @@ legend{
 
 
 
-	.notice{
+	.notice{ 
 		margin-left: -18px;/*Gjør at det er teksten som aligner med half og ikke borderen*/
 		width: calc((100% / 8) * 6)
 	}
