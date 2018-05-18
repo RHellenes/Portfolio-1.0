@@ -302,6 +302,7 @@ article{
 
 .half > .section .content{
 	width: 60%;
+	position: relative;
 }
 
 
@@ -312,16 +313,15 @@ article{
 	width: 100%;
 }
 
-.half > .section .content ul{
+ .section .content ul{
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
 }
-.half > .section .content ul li{
+ .section .content ul li{
 	position: relative;
 }
-
-.half > .section .content ul li::before{
+ .section .content ul li::before{
 	content:" ";
 	position: absolute;
 	background-color: var(--sec_color);
@@ -331,6 +331,23 @@ article{
 	left:-11px;
 }
 
+.notice{
+	width: 100%;
+	padding:0px 10px 10px 15px;
+	border:3px solid var(--sec_color);
+	margin-top: 0;
+
+}
+legend{
+	font-family: 'Geomanist-Medium', sans-serif;
+	padding: 0 10px;
+	margin-left: -9px;
+}
+
+
+
+
+
 
 
 
@@ -338,23 +355,23 @@ article{
 
 
 @media only screen and (min-width: 630px){
-.half{
-	width: 60%;
+	.half{
+		width: 60%;
 
-}
-	.half > .section .title{
-	width: calc((100% / 3)*1);
-}
+	}
+		.half > .section .title{
+		width: calc((100% / 3)*1);
+	}
 
-.half > .section .content{
-	width: calc((100% / 3)*2);;
-}
-.full > .section .title{
-	width: 20%;
-}
-.full > .section .content{
-	width: 80%;
-}
+	.half > .section .content{
+		width: calc((100% / 3)*2);;
+	}
+	.full > .section .title{
+		width: 20%;
+	}
+	.full > .section .content{
+		width: 80%;
+	}
 }
 
 
@@ -383,23 +400,18 @@ article{
 		display: none;
 	}
 	.logo{
-		left: 5% !important;
+		left: 10% !important;
 		opacity: 1;
 	}
 
-	main{
-		width: 95%;
-		margin-left: 2.5%;
-		margin-right: 2.5%;
-
-	}
+	
 
 	nav{
 		width: auto;
 		display: block;
 		opacity: 1;
 		float: right;
-		margin-right: 5%;
+		margin-right: 10%;
 	}
 
 	nav ul{
@@ -410,6 +422,51 @@ article{
 		float: left;
 		margin: 9px 1em 0 1em;
 	}
+
+	main{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+
+	}
+	h1{
+		position: relative;
+		width: calc((100% / 12) * 10);
+	}
+
+	h1::before{
+	content:"–";
+	color: var(--sec_color);
+	position: absolute;
+	left:-25px;
+
+	}
+
+	h1,
+	.half,
+	.full{
+		margin-left: calc(100% / 12);
+		margin-right: calc(100% / 12);
+	}
+
+	.half{
+		width: calc((100% / 12) * 6);
+	}
+
+	.full{
+		width: calc((100% / 12) * 10);
+	}
+
+
+
+	.notice{
+		margin-left: -18px;/*Gjør at det er teksten som aligner med half og ikke borderen*/
+		width: calc((100% / 8) * 6)
+	}
+
+
+
+
 
 
 

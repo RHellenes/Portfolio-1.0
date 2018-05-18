@@ -7,7 +7,7 @@
 
 <main>
 
-	<h1>Om Meg</h1>
+	<h1>Om Meg.</h1>
 
 	<article class="half">
 
@@ -23,7 +23,7 @@
 
 		<div class="section">
 			<div class="title">Utdanning:</div>
-			<div class="content">Bachelor i Visuell Kommunikasjon ved Høgskolen i Sør- Øst Norge avd. Drammen</div>
+			<div class="content">Bachelor i Visuell Kommunikasjon ved Høgskolen (nå Universitetet) i Sør- Øst Norge avd. Drammen</div>
 		</div>
 
 		<div class="section">
