@@ -6,9 +6,10 @@
 ?>
 
 <main>
-
-	<h1>Om Meg.</h1>
-
+	<div class="main-title-area">
+		<h1>Om Meg.</h1>
+	</div>
+	
 	<article class="half">
 
 		<div class="section">

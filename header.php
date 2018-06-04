@@ -7,7 +7,7 @@
 
 	<title>
 		<?php 
-		echo $page_title;
+		echo $page_title.' -> RHellenes';
 		?>
 			
 		</title>
@@ -25,6 +25,8 @@
 
 		<!-- Geomanist is loaded through css -->
 		<!-- Script is loaded call upon in footer -->
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet">
 </head>
 
 <body>
@@ -41,6 +43,8 @@
 
 			<ul>
 				<?php
+
+
 					// Om meg
 				echo '<li';
 
@@ -57,6 +61,7 @@
 
 				echo "</li>\r\n";
 
+
 				// Portfolio
 
 				echo '<li';
@@ -70,9 +75,10 @@
 					echo ">\r\n";
 				}
 
-				echo '<a href="'.$toRoot.'portfolio.php">Portfolio.</a>';
+				echo '<a href="'.$toRoot.'index.php#portfolio">Portfolio.</a>';
 
 				echo "</li>\r\n";
+
 
 				// Kontakt
 

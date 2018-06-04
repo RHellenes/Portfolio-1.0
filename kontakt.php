@@ -6,9 +6,9 @@
 ?>
 
 <main>
-
-	<h1>Kontakt.</h1>
-
+	<div class="main-title-area">
+		<h1>Kontakt.</h1>
+	</div>
 
 	<article class="full">
 
@@ -17,12 +17,10 @@
 				
 			</div>
 			<div class="content">
-				<form>
 					<fieldset class="notice">
 						<legend>Info</legend>
-						Dette er en midertidig versjon (03.05.2018
+						Dette er en midertidig versjon (03.05.2018).
 					</fieldset>
-				</form
 			</div>
 		</div>
 	</article>
