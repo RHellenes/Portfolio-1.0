@@ -6,9 +6,10 @@
 ?>
 
 <main>
-
-	<h1>Om Meg.</h1>
-
+	<div class="main-title-area">
+		<h1>Om Meg.</h1>
+	</div>
+	
 	<article class="half">
 
 		<div class="section">
@@ -61,7 +62,7 @@
 			<div class="title">Perfekte jobb:</div>
 			<div class="content">Jeg ønsker meg en arbeidsplass som har et ambisiøst og et sterkt faglig miljø, med kolleger som har stolthet i arbeidet sitt og ønsker å lære bort det de kan! Samtidig som de setter pris på hyggelige samtaler i pausen, om faglige, så vell som emner som opptar dem på fritiden.
 
-			Vet du om en ledig stilling eller tenker at jeg ville passet inn i teamet ditt eller til noen du kjenner? TIPS MEG!&#x1F603;</div>
+			Vet du om en ledig stilling eller tenker at jeg ville passet inn i teamet ditt eller til noen du kjenner? TIPS MEG!&#x1F603;... eller dem... helst dem... og få dem til å kontakt meg. &#x1f60e; </div>
 		</div>
 
 </article>

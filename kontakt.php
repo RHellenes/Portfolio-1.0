@@ -6,9 +6,9 @@
 ?>
 
 <main>
-
-	<h1>Kontakt.</h1>
-
+	<div class="main-title-area">
+		<h1>Kontakt.</h1>
+	</div>
 
 	<article class="full">
 
@@ -17,12 +17,10 @@
 				
 			</div>
 			<div class="content">
-				<form>
 					<fieldset class="notice">
 						<legend>Info</legend>
-						Dette er en midertidig versjon (03.05.2018
+						Dette er en midertidig versjon (03.05.2018).
 					</fieldset>
-				</form
 			</div>
 		</div>
 	</article>
@@ -37,11 +35,15 @@
 
 		<div class="section">
 			<div class="title">Email:</div>
-			<div class="content">rene.hellenes@gmail.com</div>
+			<div class="content">
+				<a href="mailto:rene.hellenes@gmail.com">
+					<span>rene.hellenes@gmail.com</span>
+				</a>
+			</div>
 		</div>
 
 		<div class="section">
-			<div class="title">Svartid</div>
+			<div class="title">Svartid:</div>
 			<div class="content">< 24 timer</div>
 		</div>
 
@@ -51,7 +53,7 @@
 		</div>
 
 		<div class="section">
-			<div class="title">Besøk</div>
+			<div class="title">Besøk:</div>
 			<div class="content">Avtales etter kontakt
 			</div>
 		</div>
