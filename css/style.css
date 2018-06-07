@@ -11,7 +11,7 @@
 	--fallback_bg:rgb(var(--fallback_bg_val));
 
 	--background_color:linear-gradient(to right, var(--fallback_bg), rgb(237,250,248));
-	--background_color:#FAFFFF;
+	--background_color:rgb(245,245,245);
 
 
 }
@@ -50,8 +50,11 @@ body{
 	padding-top: 80px;
 	background-color:var(--fallback_bg);
 	background: #F5F5F5;
+	float: left;
 	
-	
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 
 }
 
@@ -60,22 +63,34 @@ body{
 	width: 100%;
 }
 
+
 header{
 	width: 100%;
 	position: absolute;
 	top: 0;
-	left: 0;
 	/*background: var(--background_color);*/
 	background: #F5F5F5;
-
+	/*background-color: #FFF;*/
 	height: 80px;
 	float: left;
-	padding: 1em;
+	
 	box-shadow: -1px 4px 20px rgba(var(--shadow-color),.10);
 	-webkit-transition: all .5s cubic-bezier(.56,.06,.15,.98);
 	transition: all .5s cubic-bezier(.56,.06,.15,.98);
 	overflow: hidden;
 	z-index: 999;
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+}
+
+.header-container{
+	width: 100%;
+	max-width: 1500px;
+	position: relative;
+	float: left;
 }
 .open_menu{
 	height:100vh;
@@ -87,6 +102,7 @@ header{
 	font-family: 'Geomanist Medium' , sans-serif;
 	font-size: 2.5em;
 	position: absolute;
+	margin-top: 12px;
 	left: -210px;
 	opacity: .4;
 	-webkit-transition: all .4s ;
@@ -135,7 +151,7 @@ header{
 	width: 60px;
 	height: 50px;
 	padding:3px;
-	margin: 0px 20px;
+	margin: 15px 5% 0 0;
 	position: relative;
 	cursor: pointer;
 	background: none;
@@ -182,7 +198,7 @@ header{
     transform: rotate(135deg);
 }
 .move_away{
-	margin-left: 100px !important;
+	margin-left: 120px !important;
 	opacity: .5;
 	-webkit-transition: all .6s ;
 	transition: all .6s ;
@@ -214,7 +230,7 @@ nav{
 nav ul {
 	list-style-type: none;
 	margin-top :4em;
-	padding-left: 30px;
+	padding-left: 5%;
 }
 nav ul li{
 	margin: 1em 0;
@@ -249,9 +265,6 @@ nav ul .active:after{
 	/*background-color: var(--sec_color) ;*/
 }
 
-nav ul li:nth-of-type(3):after{
-	
-}
 
 
 nav ul li a{
@@ -271,10 +284,31 @@ nav ul li a:active{
 }
 
 main{
-	width: 85%;
-	margin-left: 7.5%;
-	padding: 3em 0 0 0;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #FFF;
+	padding: 3em 2.5% 0 2.5%;
+	float: left;
+
+	max-width:1500px;
 	
+}
+footer{
+	width: 100%;
+	padding:2em 7.5%;
+	background-color: #FFF;
+	float: left;
+	margin-top: 10em;
+
+	max-width:1500px;
+}
+
+footer .half{
+	margin-bottom: 0;
+}
+#grey{
+	background-color: var(--background_color);
 }
 .main-title-area{
 	width: 100%;
@@ -296,7 +330,7 @@ h5{
 	margin: 0;
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 500;
-	color:rgba(var(--main_color_val),0.9);
+	color:var(--sec_color);
 }
 article{
 	margin: 0em 0 6em 0;
@@ -315,6 +349,7 @@ article{
 	width: 100%;
 	position: relative;
 	float: left;
+
 }
 .card{
 	padding: 20px;
@@ -427,16 +462,19 @@ a{
 	width: 0px;
 	height: 2px;
 	background-color: var(--main_color);
-	transition: .3s;
+	-webkit-transition: all .2s cubic-bezier(.01,.99,.84,.98);
+	transition: all .2s cubic-bezier(.01,.99,.84,.98);
 }
 
 .hover-effect{
 
-	transition: .3s;
+	-webkit-transition: all .2s cubic-bezier(.01,.99,.84,.98);
+	transition: all .2s cubic-bezier(.01,.99,.84,.98);
 }
 .hover-effect::after{
 	width: 100% !important;
-	transition: .3s;
+	-webkit-transition: all .2s cubic-bezier(.01,.99,.84,.98);
+	transition: all .2s cubic-bezier(.01,.99,.84,.98);
 }
 
 
@@ -470,18 +508,88 @@ a{
 
 .content ul li{
 	position: relative;
+	margin: .5em 0;
 	word-break: break-all;
+	clear: both;
 }
-
+.card ul li:first-of-type{
+	margin-top: 0;
+}
 .content ul li::before{
 	content:"";
 	background-color: var(--sec_color);
 	display: block;
 	float: left;
-	margin-top: 12px;
+	margin-top: 13px;
 	margin-right: 5px;
 	width: 8px;
 	height: 2px;
+}
+
+.content ul li a{
+	float: left;
+	position: relative;
+
+	width: auto;
+}
+
+.split .content ul li a{
+	margin-bottom: 8px;
+}
+.content ul li a::after{
+	content:"";
+	width: 15px;
+	height: 15px;
+	display: block;
+	float: right;
+	margin: 5px 0 0 7px;
+
+	background-image: url('../images/icons/External_link.svg');
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+
+footer .content ul li::before{
+	display: none;
+}
+
+footer .content ul li a span::after,
+.split .content ul li a::after{
+	margin-top: 3px;
+}
+
+.split .content ul li:first-of-type,
+footer .content ul li:first-of-type{
+	margin-top: 0;
+	float: left;
+}
+
+
+.content a span::after{
+	position: absolute;
+	content: "";
+	width: 0px;
+	height: 2px;
+	left: 0;
+	bottom: -3px;
+	background-color: var(--main_color);
+	-webkit-transition: all .4s cubic-bezier(.01,.99,.84,.98);
+	transition: all .4s cubic-bezier(.01,.99,.84,.98);
+}
+
+
+
+
+.split .content ul li a span::after{
+	bottom: -2px;
+}
+
+.content a span:hover::after{
+	width: 100%;
+	-webkit-transition: all .4s cubic-bezier(.01,.99,.84,.98);
+	transition: all .4s cubic-bezier(.01,.99,.84,.98);
 }
 
 
@@ -495,6 +603,11 @@ a{
 	margin: 0;
 }
 
+
+.content span{
+	width: auto;
+	position: relative;
+}
 
 
 
@@ -567,7 +680,9 @@ a{
 	background-size: auto 100%;	
 }
 
-
+#sunglasses{
+	cursor: url('../images/icons/Sunglasses_Emoji.png'), auto;;
+}
 
 
 
@@ -1043,6 +1158,7 @@ legend{
 @media only screen and (min-width: 1024px){
 	header{
 		position: fixed;
+		padding: 1em 0%;
 		
 	}
 	.menu_logo,
@@ -1068,7 +1184,7 @@ legend{
 		display: block;
 		opacity: 1;
 		float: right;
-		margin-right: 10%;
+		/*margin-right: 10%;*/
 	}
 
 	nav ul{
@@ -1080,12 +1196,24 @@ legend{
 		margin: 9px 1em 0 1em;
 	}
 
+	nav ul li:last-of-type{
+		margin-right: 0;
+	}
+	.header-container,
+	footer,
 	main{
 		width: 80%;
-		margin-left: 10%;
 		margin-right: 10%;
+		margin-left: 10%;
+		padding-left: 0;
+		padding-right: 0;
+
 
 	}
+	.logo{
+		left:0 !important;
+	}
+
 	h1{
 		position: relative;
 		width: calc((100% / 12) * 10);
@@ -1114,10 +1242,19 @@ legend{
 	.half{
 		width: calc((100% / 12) * 6);
 	}
+
+
 	.button-area,
 	.split,
 	.full{
 		width: calc((100% / 12) * 10);
+	}
+	.card{
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		padding:calc(100% / 12);	
+
 	}
 
 	.button-container{
@@ -1181,5 +1318,12 @@ legend{
 
 	/*////////   Desktop    /////////*/
 @media only screen and (min-width: 1254px){
+
+}
+
+
+
+/*////////   Really large screen    /////////*/
+@media only screen and (min-width: 1500px){
 
 }

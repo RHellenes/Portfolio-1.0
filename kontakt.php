@@ -35,11 +35,15 @@
 
 		<div class="section">
 			<div class="title">Email:</div>
-			<div class="content">rene.hellenes@gmail.com</div>
+			<div class="content">
+				<a href="mailto:rene.hellenes@gmail.com">
+					<span>rene.hellenes@gmail.com</span>
+				</a>
+			</div>
 		</div>
 
 		<div class="section">
-			<div class="title">Svartid</div>
+			<div class="title">Svartid:</div>
 			<div class="content">< 24 timer</div>
 		</div>
 
@@ -49,7 +53,7 @@
 		</div>
 
 		<div class="section">
-			<div class="title">Besøk</div>
+			<div class="title">Besøk:</div>
 			<div class="content">Avtales etter kontakt
 			</div>
 		</div>

@@ -79,7 +79,7 @@
 
 		<div class="section">
 			<div class="title">Lese/ se mer?</div>
-			<div class="content">Jeg har valgt å fokusere på den webrelaterte delen på nettsiden min. Har du lyst itl å se mer så ta kontakt så kan vi enten avtale et uformelt møte, eller noe lignende!</div>
+			<div class="content">Jeg har valgt å fokusere på den webrelaterte delen på nettsiden min. Har du lyst til å se mer så ta kontakt så kan vi enten avtale et uformelt møte, eller noe lignende!</div>
 		</div>
 
 </article>
@@ -140,7 +140,11 @@
 			<div class="content">
 				<ul>
 					<li>Sara Ma Baskår Nordli</li>
-					<li>Line Løvaas</li>
+					<li>
+						<a href="http://www.morfoseline.no" target="_blank">
+						<span>Line Løvaas</span>
+						</a>
+					</li>
 					<li>Rachel Dahlby Løkka</li>
 					<li>René Hellenes</li>
 				</ul>

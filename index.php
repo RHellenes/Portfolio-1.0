@@ -5,7 +5,7 @@
 	include_once($toRoot.'header.php');
 ?>
 
-<main>
+<main id="grey">
 	<div id="portfolio"></div>
 	<div class="main-title-area" >
 		<h1>Portfolio.</h1>
@@ -23,9 +23,9 @@
 						<li>Konseptutvikling</li>
 					</ul>
 					<p>
-						Inspirert av en plutselig en stor mengde politi og soldater bevæpna med automatvåpen på Karl Johan kom vi opp med InfoLight - en varslings app (konsept) som skal informere om hendelser som det kan være nyttig å vite om. Denne nettsiden er en slags pitch til den.
+						Inspirert av en plutselig en stor mengde politi og soldater bevæpna med automatvåpen på Karl Johan kom vi opp med varslingsappen: InfoLight 
 					</p>
-					<!-- <a href="portfolio/infolight.php" class="button">Se mer</a> -->
+					
 				</div>
 				<div class="divider">
 					<picture>
@@ -53,9 +53,10 @@
 						<li>Konseptutvikling</li>
 					</ul>
 					<p>
-						Ekko Respons er et redesign av et eksisterende firma som tilbyr en mobil varslingstjeneste som det var vanskelig å forklare med få ord… Vår oppgave var derfor å fornye firmaet med en enklere kommunikasjonsstrategi.
+						
+						Inspirert av tjenestens hovedoppgaven til tjenesten - varsle og mobilisere mannskap - kom vi opp med et nytt konsept og et nytt design.
 					</p>
-					<!-- <a href="portfolio/ekko_respons.php" class="button">Se mer</a> -->
+				
 				</div>
 				<div class="divider">
 					<picture>
@@ -82,7 +83,7 @@
 					<p>
 						Motviert av en whisky interesse i blomstring utviklet jeg Tælahiv - en fiktiv whisky som er inspirert av den norske naturen.
 					</p>
-					<!-- <a href="portfolio/taelahiv.php" class="button">Se mer</a> -->
+					
 				</div>
 				<div class="divider">
 					<picture>
@@ -109,7 +110,7 @@
 					<p>
 						Middelalderskogen er et kultursenter lokalisert i Rollag kommune trengte hjelp til skape større interesse til senteret samt engasjere flere sponsorer.
 					</p>
-					<!-- <a href="portfolio/middelalderskogen.php" class="button">Se mer</a> -->
+					
 				</div>
 				<div class="divider">
 					<picture>
@@ -133,9 +134,9 @@
 						<li>Webdesign</li>
 					</ul>
 					<p>
-						Delivery var en oppgave gitt til eksamen i webdesign ved HSN. Kun navnet på designbyrået var gitt. Ellers var det fritt spillerom  - Dette er da nettsiden jeg kom opp med.
+						Delivery var en oppgave gitt til eksamen i webdesign ved HSN. Kun navnet på designbyrået var gitt. Ellers var det fritt spillerom  - Dette er da nettsiden.
 					</p>
-					<!-- <a href="portfolio/delivery.php" class="button">Se mer</a> -->
+					
 				</div>
 				<div class="divider">
 					<picture>
@@ -162,7 +163,7 @@
 					<p>
 						Green Choice er et eksisterende peanutsmør som jeg og 3 andre i klassen gikk sammen for å redesigne. Her er vår løsning.
 					</p>
-					<!-- <a href="portfolio/green_choice.php" class="button">Se mer</a> -->
+					
 				</div>
 				<div class="divider">
 					<picture>

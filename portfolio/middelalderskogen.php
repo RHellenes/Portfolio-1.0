@@ -56,7 +56,7 @@
 	</div>
 
 	<div class="centered">
-		<h3>Med mål om å skape og opprettholde engasjement hos besøkende over lengre tid har vi pitchet et kartbasert konsept som utvikler seg i samtid med senteret.  </h3>
+		<h3>Med mål om å skape og opprettholde et varig engasjement hos besøkende - har vi pitchet et kartbasert konsept som utvikler seg i samtid med senteret.</h3>
 	</div>
 
 	<div class="mood-area">
@@ -88,7 +88,7 @@
 						Skape et varig engasjement for de besøkende. 
 					</li>
 					<li>
-						Få inn fler sponsormidler
+						Få inn mer sponsormidler
 					</li>
 				</ul>
 			</div>
@@ -105,7 +105,9 @@
 			<div class="content">
 				<ul>
 					<li>
-						Joakim Illugraf Nilsen
+						<a href="https://www.instagram.com/illugrafen/" target="_blank">
+							<span>Joakim Illugraf Nilsen<span>
+						</a>	
 					</li>
 					<li>
 						Erik Joramo
@@ -138,9 +140,13 @@
 			<div class="title">Team:</div>
 			<div class="content">
 				<ul>
-					<li>Sara Ma Baskår Nordli</li>
-					<li>Anine Heitun</li>
-					<li>Veronica Reinemo Jaksland</li>
+					<li>
+						<a href="https://www.instagram.com/illugrafen/" target="_blank">
+							<span>Joakim Illugraf Nilsen</span>
+						</a>
+					</li>
+					<li>Erik Joramo</li>
+					<li>Camilla Pedersen</li>
 					<li>René Hellenes</li>
 				</ul>
 			</div>
@@ -153,7 +159,12 @@
 
 				<div class="software-icon" id="photoshop">Photoshop</div>
 
-				<div class="software-icon" id="indesign">InDesign</div>
+				<div class="software-icon" id="html">HMTL5</div>
+
+				<div class="software-icon" id="css3">CSS3</div>
+
+				<div class="software-icon" id="javascript">JavaScript</div>
+			</div>
 			</div>
 		</div>
 

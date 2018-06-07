@@ -113,12 +113,19 @@
 	<article class="split">
 		<div class="split-inner-container">
 
+			<div class="title">Foto:</div>
+			<div class="content">
+				<ul>
+					<li>
+						<a href="https://www.instagram.com/hodefoting/" target="_blank">
+							<span>Jonas Lereggen </span>
+						</a>
+				</li>
+				</ul>
+			</div>
 			<div class="title">Team:</div>
 			<div class="content">
 				<ul>
-					<li>Sara Ma Baskår Nordli</li>
-					<li>Line Løvaas</li>
-					<li>Rachel Dahlby Løkka</li>
 					<li>René Hellenes</li>
 				</ul>
 			</div>
