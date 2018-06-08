@@ -51,7 +51,7 @@
 
 			<div class="title">Privacy:</div>
 			<div class="content">
-				<a href="">
+				<a href="<?php echo $toRoot.'privacy.php'?>">
 					<span>Rhellenes.me/privacy</span>
 				</a>
 			</div>

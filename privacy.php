@@ -1,5 +1,5 @@
 <?php 
-	$page_title = "Kontakt";
+	$page_title = "Personvern";
 	
 	$toRoot = "";
 	include_once($toRoot.'header.php');
@@ -7,7 +7,7 @@
 
 <main>
 	<div class="main-title-area">
-		<h1>Kontakt.</h1>
+		<h1>Personvern.</h1>
 	</div>
 
 	<article class="full">
@@ -17,10 +17,7 @@
 				
 			</div>
 			<div class="content">
-					<fieldset class="notice">
-						<legend>Info</legend>
-						Dette er en midertidig versjon (07.06.2018).
-					</fieldset>
+
 			</div>
 		</div>
 	</article>
