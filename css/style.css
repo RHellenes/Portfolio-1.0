@@ -68,8 +68,8 @@ header{
 	width: 100%;
 	position: absolute;
 	top: 0;
-	/*background: var(--background_color);*/
-	background: #F5F5F5;
+	background: var(--background_color);
+	/*background: #F5F5F5;*/
 	/*background-color: #FFF;*/
 	height: 80px;
 	float: left;

@@ -140,12 +140,12 @@
 			<div class="title">Team:</div>
 			<div class="content">
 				<ul>
+					<li>Erik Joramo</li>
 					<li>
 						<a href="https://www.instagram.com/illugrafen/" target="_blank">
 							<span>Joakim Illugraf Nilsen</span>
 						</a>
 					</li>
-					<li>Erik Joramo</li>
 					<li>Camilla Pedersen</li>
 					<li>René Hellenes</li>
 				</ul>
