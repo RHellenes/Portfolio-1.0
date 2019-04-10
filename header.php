@@ -29,7 +29,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet">
 
 		<!-- Favicon -->
-
+ 
 		<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $toRoot.'images/favicons/apple-touch-icon.png'?>">
 
 		<link rel="icon" type="image/png" sizes="32x32" href="<?php echo $toRoot.'images/favicons/favicon-32x32.png'?>">
