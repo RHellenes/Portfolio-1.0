@@ -10,9 +10,8 @@
 	--sec_color:rgba(var(--main_color_val),.75);
 	--fallback_bg:rgb(var(--fallback_bg_val));
 
-	--background_color:linear-gradient(to right, var(--fallback_bg), #edfaf8);
+	--background_color:linear-gradient(to right, var(--fallback_bg), rgb(237, 250, 248));
 	--background_color:rgb(245,245,245);
-	
 
 
 }
