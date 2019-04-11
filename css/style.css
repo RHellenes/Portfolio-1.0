@@ -834,9 +834,6 @@ legend{
 	position:relative;
 }
 
-.small-tablet{
-	/*margin-left:40%;*/
-}
 
 .small-phone{
 	float: left;
@@ -1001,9 +998,6 @@ legend{
 		padding-right:10px; 
 	}
 
-	.full > .section .title span{
-		
-	}
 	
 	.split{
 		display: flex;
@@ -1111,27 +1105,8 @@ legend{
 	
 	}
 
-
-
-
-
-	
-
-
 }
 
-
-
-
-
-
-
-/*////////   Tablet-stående    /////////*/
-@media only screen and (min-width: 786px){
-	.full > .section .title span{
-		
-	}
-}
 
 @media only screen and (min-width: 900px){
 	.divider{
@@ -1310,20 +1285,5 @@ legend{
 
 
 
-
-
-
-
-
-
-	/*////////   Desktop    /////////*/
-@media only screen and (min-width: 1254px){
-
-}
-
-
-
-/*////////   Really large screen    /////////*/
-@media only screen and (min-width: 1500px){
 
 }
