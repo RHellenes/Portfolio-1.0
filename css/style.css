@@ -10,8 +10,9 @@
 	--sec_color:rgba(var(--main_color_val),.75);
 	--fallback_bg:rgb(var(--fallback_bg_val));
 
-	--background_color:linear-gradient(to right, var(--fallback_bg), rgb(237, 250, 248));
+	--background_color:linear-gradient(to right, var(--fallback_bg), #edfaf8);
 	--background_color:rgb(245,245,245);
+	
 
 
 }
@@ -834,6 +835,9 @@ legend{
 	position:relative;
 }
 
+.small-tablet{
+	/*margin-left:40%;*/
+}
 
 .small-phone{
 	float: left;
@@ -998,6 +1002,9 @@ legend{
 		padding-right:10px; 
 	}
 
+	.full > .section .title span{
+		
+	}
 	
 	.split{
 		display: flex;
@@ -1105,8 +1112,27 @@ legend{
 	
 	}
 
+
+
+
+
+	
+
+
 }
 
+
+
+
+
+
+
+/*////////   Tablet-stående    /////////*/
+@media only screen and (min-width: 786px){
+	.full > .section .title span{
+		
+	}
+}
 
 @media only screen and (min-width: 900px){
 	.divider{
@@ -1285,5 +1311,20 @@ legend{
 
 
 
+
+
+
+
+
+
+	/*////////   Desktop    /////////*/
+@media only screen and (min-width: 1254px){
+
+}
+
+
+
+/*////////   Really large screen    /////////*/
+@media only screen and (min-width: 1500px){
 
 }
